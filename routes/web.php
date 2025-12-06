@@ -5,7 +5,8 @@ use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/dashboard',
-    [PostController::class,'index'])->middleware(['auth', 'verified'])->name('dashboard');
+    [PostController::class,'index']
+)->middleware(['auth', 'verified'])->name('dashboard');
 
 
 Route::get('/', function () {
