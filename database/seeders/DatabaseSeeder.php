@@ -41,10 +41,10 @@ class DatabaseSeeder extends Seeder
         }
 
         //create 50 posts
-        Post::factory(50)->create(
-            [
-                'user_id' => $user->id,
-            ]
-        );
+//        Post::factory(50)->create(
+//            [
+//                'user_id' => $user->id,
+//            ]
+//        );
     }
 }
