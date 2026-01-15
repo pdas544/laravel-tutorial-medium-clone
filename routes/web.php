@@ -16,6 +16,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     Route::post('/post',[PostController::class,'store'])->name('post.store');
 
+    Route::get('/@{username}/{post:slug}',[PostController::class,'show'])->name('post.show');
+
 });
 
 
